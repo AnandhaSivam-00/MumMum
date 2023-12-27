@@ -1,0 +1,841 @@
+[
+    {
+        "country_id": "2",
+        "sortname": "BD",
+        "country_name": "Bangladesh",
+        "states": [
+            {
+                "state_id": "337",
+                "state_name": "Bagar Hat",
+                "country_id": "2"
+            },
+            {
+                "state_id": "338",
+                "state_name": "Bandarban",
+                "country_id": "2"
+            },
+            {
+                "state_id": "339",
+                "state_name": "Barguna",
+                "country_id": "2"
+            },
+            {
+                "state_id": "340",
+                "state_name": "Barisal",
+                "country_id": "2"
+            },
+            {
+                "state_id": "341",
+                "state_name": "Bhola",
+                "country_id": "2"
+            },
+            {
+                "state_id": "342",
+                "state_name": "Bogora",
+                "country_id": "2"
+            },
+            {
+                "state_id": "343",
+                "state_name": "Brahman Bariya",
+                "country_id": "2"
+            },
+            {
+                "state_id": "344",
+                "state_name": "Chandpur",
+                "country_id": "2"
+            },
+            {
+                "state_id": "345",
+                "state_name": "Chattagam",
+                "country_id": "2"
+            },
+            {
+                "state_id": "346",
+                "state_name": "Chittagong Division",
+                "country_id": "2"
+            },
+            {
+                "state_id": "347",
+                "state_name": "Chuadanga",
+                "country_id": "2"
+            },
+            {
+                "state_id": "348",
+                "state_name": "Dhaka",
+                "country_id": "2"
+            },
+            {
+                "state_id": "349",
+                "state_name": "Dinajpur",
+                "country_id": "2"
+            },
+            {
+                "state_id": "350",
+                "state_name": "Faridpur",
+                "country_id": "2"
+            },
+            {
+                "state_id": "351",
+                "state_name": "Feni",
+                "country_id": "2"
+            },
+            {
+                "state_id": "352",
+                "state_name": "Gaybanda",
+                "country_id": "2"
+            },
+            {
+                "state_id": "353",
+                "state_name": "Gazipur",
+                "country_id": "2"
+            },
+            {
+                "state_id": "354",
+                "state_name": "Gopalganj",
+                "country_id": "2"
+            },
+            {
+                "state_id": "355",
+                "state_name": "Habiganj",
+                "country_id": "2"
+            },
+            {
+                "state_id": "356",
+                "state_name": "Jaipur Hat",
+                "country_id": "2"
+            },
+            {
+                "state_id": "357",
+                "state_name": "Jamalpur",
+                "country_id": "2"
+            },
+            {
+                "state_id": "358",
+                "state_name": "Jessor",
+                "country_id": "2"
+            },
+            {
+                "state_id": "359",
+                "state_name": "Jhalakati",
+                "country_id": "2"
+            },
+            {
+                "state_id": "360",
+                "state_name": "Jhanaydah",
+                "country_id": "2"
+            },
+            {
+                "state_id": "361",
+                "state_name": "Khagrachhari",
+                "country_id": "2"
+            },
+            {
+                "state_id": "362",
+                "state_name": "Khulna",
+                "country_id": "2"
+            },
+            {
+                "state_id": "363",
+                "state_name": "Kishorganj",
+                "country_id": "2"
+            },
+            {
+                "state_id": "364",
+                "state_name": "Koks Bazar",
+                "country_id": "2"
+            },
+            {
+                "state_id": "365",
+                "state_name": "Komilla",
+                "country_id": "2"
+            },
+            {
+                "state_id": "366",
+                "state_name": "Kurigram",
+                "country_id": "2"
+            },
+            {
+                "state_id": "367",
+                "state_name": "Kushtiya",
+                "country_id": "2"
+            },
+            {
+                "state_id": "368",
+                "state_name": "Lakshmipur",
+                "country_id": "2"
+            },
+            {
+                "state_id": "369",
+                "state_name": "Lalmanir Hat",
+                "country_id": "2"
+            },
+            {
+                "state_id": "370",
+                "state_name": "Madaripur",
+                "country_id": "2"
+            },
+            {
+                "state_id": "371",
+                "state_name": "Magura",
+                "country_id": "2"
+            },
+            {
+                "state_id": "372",
+                "state_name": "Maimansingh",
+                "country_id": "2"
+            },
+            {
+                "state_id": "373",
+                "state_name": "Manikganj",
+                "country_id": "2"
+            },
+            {
+                "state_id": "374",
+                "state_name": "Maulvi Bazar",
+                "country_id": "2"
+            },
+            {
+                "state_id": "375",
+                "state_name": "Meherpur",
+                "country_id": "2"
+            },
+            {
+                "state_id": "376",
+                "state_name": "Munshiganj",
+                "country_id": "2"
+            },
+            {
+                "state_id": "377",
+                "state_name": "Naral",
+                "country_id": "2"
+            },
+            {
+                "state_id": "378",
+                "state_name": "Narayanganj",
+                "country_id": "2"
+            },
+            {
+                "state_id": "379",
+                "state_name": "Narsingdi",
+                "country_id": "2"
+            },
+            {
+                "state_id": "380",
+                "state_name": "Nator",
+                "country_id": "2"
+            },
+            {
+                "state_id": "381",
+                "state_name": "Naugaon",
+                "country_id": "2"
+            },
+            {
+                "state_id": "382",
+                "state_name": "Nawabganj",
+                "country_id": "2"
+            },
+            {
+                "state_id": "383",
+                "state_name": "Netrakona",
+                "country_id": "2"
+            },
+            {
+                "state_id": "384",
+                "state_name": "Nilphamari",
+                "country_id": "2"
+            },
+            {
+                "state_id": "385",
+                "state_name": "Noakhali",
+                "country_id": "2"
+            },
+            {
+                "state_id": "386",
+                "state_name": "Pabna",
+                "country_id": "2"
+            },
+            {
+                "state_id": "387",
+                "state_name": "Panchagarh",
+                "country_id": "2"
+            },
+            {
+                "state_id": "388",
+                "state_name": "Patuakhali",
+                "country_id": "2"
+            },
+            {
+                "state_id": "389",
+                "state_name": "Pirojpur",
+                "country_id": "2"
+            },
+            {
+                "state_id": "390",
+                "state_name": "Rajbari",
+                "country_id": "2"
+            },
+            {
+                "state_id": "391",
+                "state_name": "Rajshahi",
+                "country_id": "2"
+            },
+            {
+                "state_id": "392",
+                "state_name": "Rangamati",
+                "country_id": "2"
+            },
+            {
+                "state_id": "393",
+                "state_name": "Rangpur",
+                "country_id": "2"
+            },
+            {
+                "state_id": "394",
+                "state_name": "Satkhira",
+                "country_id": "2"
+            },
+            {
+                "state_id": "395",
+                "state_name": "Shariatpur",
+                "country_id": "2"
+            },
+            {
+                "state_id": "396",
+                "state_name": "Sherpur",
+                "country_id": "2"
+            },
+            {
+                "state_id": "397",
+                "state_name": "Silhat",
+                "country_id": "2"
+            },
+            {
+                "state_id": "398",
+                "state_name": "Sirajganj",
+                "country_id": "2"
+            },
+            {
+                "state_id": "399",
+                "state_name": "Sunamganj",
+                "country_id": "2"
+            },
+            {
+                "state_id": "400",
+                "state_name": "Tangayal",
+                "country_id": "2"
+            },
+            {
+                "state_id": "401",
+                "state_name": "Thakurgaon",
+                "country_id": "2"
+            }
+        ]
+    },
+
+    {
+        "country_id": "1",
+        "sortname": "IN",
+        "country_name": "India",
+        "states": [
+            {
+                "state_id": "1",
+                "state_name": "Andaman and Nicobar Islands",
+                "country_id": "1"
+            },
+            {
+                "state_id": "2",
+                "state_name": "Andhra Pradesh",
+                "country_id": "1"
+            },
+            {
+                "state_id": "3",
+                "state_name": "Arunachal Pradesh",
+                "country_id": "1"
+            },
+            {
+                "state_id": "4",
+                "state_name": "Assam",
+                "country_id": "1"
+            },
+            {
+                "state_id": "5",
+                "state_name": "Bihar",
+                "country_id": "1"
+            },
+            {
+                "state_id": "6",
+                "state_name": "Chandigarh",
+                "country_id": "1"
+            },
+            {
+                "state_id": "7",
+                "state_name": "Chhattisgarh",
+                "country_id": "1"
+            },
+            {
+                "state_id": "8",
+                "state_name": "Dadra and Nagar Haveli",
+                "country_id": "1"
+            },
+            {
+                "state_id": "9",
+                "state_name": "Daman and Diu",
+                "country_id": "1"
+            },
+            {
+                "state_id": "10",
+                "state_name": "Delhi",
+                "country_id": "1"
+            },
+            {
+                "state_id": "11",
+                "state_name": "Goa",
+                "country_id": "1"
+            },
+            {
+                "state_id": "12",
+                "state_name": "Gujarat",
+                "country_id": "1"
+            },
+            {
+                "state_id": "13",
+                "state_name": "Haryana",
+                "country_id": "1"
+            },
+            {
+                "state_id": "14",
+                "state_name": "Himachal Pradesh",
+                "country_id": "1"
+            },
+            {
+                "state_id": "15",
+                "state_name": "Jammu and Kashmir",
+                "country_id": "1"
+            },
+            {
+                "state_id": "16",
+                "state_name": "Jharkhand",
+                "country_id": "1"
+            },
+            {
+                "state_id": "17",
+                "state_name": "Karnataka",
+                "country_id": "1"
+            },
+            {
+                "state_id": "2",
+                "state_name": "Kenmore",
+                "country_id": "1"
+            },
+            {
+                "state_id": "19",
+                "state_name": "Kerala",
+                "country_id": "1"
+            },
+            {
+                "state_id": "20",
+                "state_name": "Lakshadweep",
+                "country_id": "1"
+            },
+            {
+                "state_id": "21",
+                "state_name": "Madhya Pradesh",
+                "country_id": "1"
+            },
+            {
+                "state_id": "22",
+                "state_name": "Maharashtra",
+                "country_id": "1"
+            },
+            {
+                "state_id": "23",
+                "state_name": "Manipur",
+                "country_id": "1"
+            },
+            {
+                "state_id": "24",
+                "state_name": "Meghalaya",
+                "country_id": "1"
+            },
+            {
+                "state_id": "25",
+                "state_name": "Mizoram",
+                "country_id": "1"
+            },
+            {
+                "state_id": "26",
+                "state_name": "Nagaland",
+                "country_id": "1"
+            },
+            {
+                "state_id": "27",
+                "state_name": "Narora",
+                "country_id": "1"
+            },
+            {
+                "state_id": "28",
+                "state_name": "Natwar",
+                "country_id": "1"
+            },
+            {
+                "state_id": "29",
+                "state_name": "Odisha",
+                "country_id": "1"
+            },
+            {
+                "state_id": "30",
+                "state_name": "Paschim Medinipur",
+                "country_id": "1"
+            },
+            {
+                "state_id": "31",
+                "state_name": "Pondicherry",
+                "country_id": "1"
+            },
+            {
+                "state_id": "32",
+                "state_name": "Punjab",
+                "country_id": "1"
+            },
+            {
+                "state_id": "33",
+                "state_name": "Rajasthan",
+                "country_id": "1"
+            },
+            {
+                "state_id": "34",
+                "state_name": "Sikkim",
+                "country_id": "1"
+            },
+            {
+                "state_id": "35",
+                "state_name": "Tamil Nadu",
+                "country_id": "1"
+            },
+            {
+                "state_id": "36",
+                "state_name": "Telangana",
+                "country_id": "1"
+            },
+            {
+                "state_id": "37",
+                "state_name": "Tripura",
+                "country_id": "1"
+            },
+            {
+                "state_id": "38",
+                "state_name": "Uttar Pradesh",
+                "country_id": "1"
+            },
+            {
+                "state_id": "39",
+                "state_name": "Uttarakhand",
+                "country_id": "1"
+            },
+            {
+                "state_id": "40",
+                "state_name": "Vaishali",
+                "country_id": "1"
+            },
+            {
+                "state_id": "41",
+                "state_name": "West Bengal",
+                "country_id": "1"
+            }
+        ]
+    },
+
+    {
+        "country_id": "3",
+        "sortname": "NP",
+        "country_name": "Nepal",
+        "states": [
+            {
+                "state_id": "2566",
+                "state_name": "Bagmati",
+                "country_id": "3"
+            },
+            {
+                "state_id": "2567",
+                "state_name": "Bheri",
+                "country_id": "3"
+            },
+            {
+                "state_id": "2568",
+                "state_name": "Dhawalagiri",
+                "country_id": "3"
+            },
+            {
+                "state_id": "2569",
+                "state_name": "Gandaki",
+                "country_id": "3"
+            },
+            {
+                "state_id": "2570",
+                "state_name": "Janakpur",
+                "country_id": "3"
+            },
+            {
+                "state_id": "2571",
+                "state_name": "Karnali",
+                "country_id": "3"
+            },
+            {
+                "state_id": "2572",
+                "state_name": "Koshi",
+                "country_id": "3"
+            },
+            {
+                "state_id": "2573",
+                "state_name": "Lumbini",
+                "country_id": "3"
+            },
+            {
+                "state_id": "2574",
+                "state_name": "Mahakali",
+                "country_id": "3"
+            },
+            {
+                "state_id": "2575",
+                "state_name": "Mechi",
+                "country_id": "3"
+            },
+            {
+                "state_id": "2576",
+                "state_name": "Narayani",
+                "country_id": "3"
+            },
+            {
+                "state_id": "2577",
+                "state_name": "Rapti",
+                "country_id": "3"
+            },
+            {
+                "state_id": "2578",
+                "state_name": "Sagarmatha",
+                "country_id": "3"
+            },
+            {
+                "state_id": "2579",
+                "state_name": "Seti",
+                "country_id": "3"
+            }
+        ]
+    },
+
+    {
+        "country_id": "4",
+        "sortname": "PK",
+        "country_name": "Pakistan",
+        "states": [
+            {
+                "state_id": "2723",
+                "state_name": "Baluchistan",
+                "country_id": "4"
+            },
+            {
+                "state_id": "2724",
+                "state_name": "Federal Capital Area",
+                "country_id": "4"
+            },
+            {
+                "state_id": "2725",
+                "state_name": "Federally administered Tribal ",
+                "country_id": "4"
+            },
+            {
+                "state_id": "2726",
+                "state_name": "North-West Frontier",
+                "country_id": "4"
+            },
+            {
+                "state_id": "2727",
+                "state_name": "Northern Areas",
+                "country_id": "4"
+            },
+            {
+                "state_id": "2728",
+                "state_name": "Punjab",
+                "country_id": "4"
+            },
+            {
+                "state_id": "2729",
+                "state_name": "Sind",
+                "country_id": "4"
+            }
+        ]
+    },
+
+    {
+        "country_id": "5",
+        "sortname": "LK",
+        "country_name": "Sri Lanka",
+        "states": [
+            {
+                "state_id": "3320",
+                "state_name": "Amparai",
+                "country_id": "5"
+            },
+            {
+                "state_id": "3321",
+                "state_name": "Anuradhapuraya",
+                "country_id": "5"
+            },
+            {
+                "state_id": "3322",
+                "state_name": "Badulla",
+                "country_id": "5"
+            },
+            {
+                "state_id": "3323",
+                "state_name": "Boralesgamuwa",
+                "country_id": "5"
+            },
+            {
+                "state_id": "3324",
+                "state_name": "Colombo",
+                "country_id": "5"
+            },
+            {
+                "state_id": "3325",
+                "state_name": "Galla",
+                "country_id": "5"
+            },
+            {
+                "state_id": "3326",
+                "state_name": "Gampaha",
+                "country_id": "5"
+            },
+            {
+                "state_id": "3327",
+                "state_name": "Hambantota",
+                "country_id": "5"
+            },
+            {
+                "state_id": "3328",
+                "state_name": "Kalatura",
+                "country_id": "5"
+            },
+            {
+                "state_id": "3329",
+                "state_name": "Kegalla",
+                "country_id": "5"
+            },
+            {
+                "state_id": "3330",
+                "state_name": "Kilinochchi",
+                "country_id": "5"
+            },
+            {
+                "state_id": "3331",
+                "state_name": "Kurunegala",
+                "country_id": "5"
+            },
+            {
+                "state_id": "3332",
+                "state_name": "Madakalpuwa",
+                "country_id": "5"
+            },
+            {
+                "state_id": "3333",
+                "state_name": "Maha Nuwara",
+                "country_id": "5"
+            },
+            {
+                "state_id": "3334",
+                "state_name": "Malwana",
+                "country_id": "5"
+            },
+            {
+                "state_id": "3335",
+                "state_name": "Mannarama",
+                "country_id": "5"
+            },
+            {
+                "state_id": "3336",
+                "state_name": "Matale",
+                "country_id": "5"
+            },
+            {
+                "state_id": "3337",
+                "state_name": "Matara",
+                "country_id": "5"
+            },
+            {
+                "state_id": "3338",
+                "state_name": "Monaragala",
+                "country_id": "5"
+            },
+            {
+                "state_id": "3339",
+                "state_name": "Mullaitivu",
+                "country_id": "5"
+            },
+            {
+                "state_id": "3340",
+                "state_name": "North Eastern Province",
+                "country_id": "5"
+            },
+            {
+                "state_id": "3341",
+                "state_name": "North Western Province",
+                "country_id": "5"
+            },
+            {
+                "state_id": "3342",
+                "state_name": "Nuwara Eliya",
+                "country_id": "5"
+            },
+            {
+                "state_id": "3343",
+                "state_name": "Polonnaruwa",
+                "country_id": "5"
+            },
+            {
+                "state_id": "3344",
+                "state_name": "Puttalama",
+                "country_id": "5"
+            },
+            {
+                "state_id": "3345",
+                "state_name": "Ratnapuraya",
+                "country_id": "5"
+            },
+            {
+                "state_id": "3346",
+                "state_name": "Southern Province",
+                "country_id": "5"
+            },
+            {
+                "state_id": "3347",
+                "state_name": "Tirikunamalaya",
+                "country_id": "5"
+            },
+            {
+                "state_id": "3348",
+                "state_name": "Tuscany",
+                "country_id": "5"
+            },
+            {
+                "state_id": "3349",
+                "state_name": "Vavuniyawa",
+                "country_id": "5"
+            },
+            {
+                "state_id": "3350",
+                "state_name": "Western Province",
+                "country_id": "5"
+            },
+            {
+                "state_id": "3351",
+                "state_name": "Yapanaya",
+                "country_id": "5"
+            },
+            {
+                "state_id": "3352",
+                "state_name": "kadawatha",
+                "country_id": "5"
+            }
+        ]
+    }
+]
