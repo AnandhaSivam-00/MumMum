@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/MumMum/static/css/main.0848ed17.css",
+    "main.js": "/MumMum/static/js/main.46d47e88.js",
+    "static/media/template.webp": "/MumMum/static/media/template.a59c824a7e1ae497bc31.webp",
+    "index.html": "/MumMum/index.html",
+    "main.0848ed17.css.map": "/MumMum/static/css/main.0848ed17.css.map",
+    "main.46d47e88.js.map": "/MumMum/static/js/main.46d47e88.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0848ed17.css",
+    "static/js/main.46d47e88.js"
+  ]
+}
