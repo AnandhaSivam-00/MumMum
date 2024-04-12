@@ -12,7 +12,7 @@ body {
       rgba(250, 250, 250, 0.801),
       rgba(250, 250, 250, 0.836)
     ), */
-    url("../public/Images/template.webp");
+    url("../src/Images/template.webp");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -45,7 +45,7 @@ body {
   max-width: 5rem;
   margin-left: 10%;
   border-radius: 50px;
-  background-image: url('../public/Images/logo.png');
+  background-image: url('../src/Images/logo.png');
 }
 
 nav {
