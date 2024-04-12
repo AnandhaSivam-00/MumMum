@@ -1,8 +1,8 @@
 import React from 'react'
 import { useEffect, useState } from 'react';
 import { Routes, Route, useLocation } from "react-router-dom";
-import { motion } from "framer-motion";
-import { AnimatePresence } from "framer-motion";
+// import { motion } from "framer-motion";
+// import { AnimatePresence } from "framer-motion";
 
 import Home from './components/Home';
 import Menu from "./components/Menu";
@@ -79,7 +79,7 @@ const AnimatedRoutes = () => {
               <Route path="/success" element={<OrderSuccess />} />
               <Route path="/eats/orders/me/myOrders" element={<ListOrders />} />
               <Route path="/eats/orders/:id" element={<OrderDetails />} />
-              <Route path="*" element={<PageNotFound />} exact />
+              {/* <Route path="*" element={<PageNotFound />} exact /> */}
           </Routes>
   
   )

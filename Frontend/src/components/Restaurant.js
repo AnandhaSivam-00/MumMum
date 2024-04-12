@@ -1,6 +1,6 @@
 import React from 'react';
 import {Link} from "react-router-dom";
-import { LazyLoadImage } from "react-lazy-load-image-component";
+// import { LazyLoadImage } from "react-lazy-load-image-component";
 
 
 const Restaurant = ({restaurant}) => {
@@ -8,10 +8,9 @@ const Restaurant = ({restaurant}) => {
       <div className="col-sm-6 col-md-6 col-lg-3 shadow-lg my-3 mb-5 p-3">
           <div className="card p-3 rounded">
               <Link to={`/eats/stores/${restaurant._id}/menus`} className="btn btn-block">
-                  <LazyLoadImage className="card-img-top mx-auto"
+                  <img className="card-img-top mx-auto"
                         src={restaurant.images[0].url}
                         alt={restaurant.name}
-                        effect="opacity"
                   />
               </Link>
               <div className="card-body d-flex flex-column">

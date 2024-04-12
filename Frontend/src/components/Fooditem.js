@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faIndianRupeeSign} from "@fortawesome/free-solid-svg-icons";
-import { LazyLoadImage } from "react-lazy-load-image-component";
+// import { LazyLoadImage } from "react-lazy-load-image-component";
 import {useDispatch, useSelector} from "react-redux";
 import {useAlert} from "react-alert";
 import {addItemToCart, updateCartQuantity, removeItemFromCart} from "../actions/cartActions";
@@ -70,10 +70,9 @@ const Fooditem = ({fooditem}) => {
       
       <div className="col-sm-12 col-md-6 col-lg-3 shadow-lg my-3 mb-5 p-3">
           <div className="card p-3 rounded">
-              <LazyLoadImage className="card-img-top mx-auto"
+              <img className="card-img-top mx-auto"
                   src={fooditem.images[0].url}
                   alt={fooditem.name}
-                  effect="opacity"
               />
               <div className="card-body d-flex flex-column">
                   <h5 className="card-title">{fooditem.name}</h5>

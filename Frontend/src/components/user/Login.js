@@ -4,7 +4,7 @@ import Loader from "../Layout/Loader";
 import {useAlert} from "react-alert";
 import {useDispatch, useSelector} from "react-redux";
 import {login, clearError} from "../../actions/userActions";
-import { motion } from "framer-motion";
+// import { motion } from "framer-motion";
 
 const Login = () => {
 

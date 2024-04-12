@@ -6,6 +6,11 @@ import {logout} from "../../actions/userActions";
 import Search from "../Layout/Search";
 import "../../App.css";
 import { clearCart } from '../../actions/cartActions';
+import logo from "../../Images/logo.png";
+import cartIcon from "../../Icons/cart-check.svg";
+import downArrow from "../../Icons/chevron-down.svg";
+import personIcon from "../../Icons/person-bounding-box.svg";
+
 
 const Header = () => {
 
@@ -27,7 +32,7 @@ const Header = () => {
         <div className="row g-0 col-sm-9">
           <div className="col-4 col-sm-3 col-md-3 ml-1 row">
             <Link to="/">
-               <img src="/Images/logo.png" alt="logo" className="logo" />
+               <img src={logo} alt="logo" className="logo" />
             </Link>
           </div>
           <div className="col-6 col-sm-9 mt-10 d-flex">
@@ -62,7 +67,7 @@ const Header = () => {
              >
               Cart 
               <img 
-                src="/Icons/cart-check.svg" 
+                src={cartIcon}
                 alt="cart" 
               />
             </button>
@@ -81,24 +86,24 @@ const Header = () => {
                   <figure className="avatar avatar-nav">
                     <img src={user.avatar && user.avatar.url} alt={user && user.name} className="rounded-circle" />
                   </figure>
-                  <span><img src="/Icons/chevron-down.svg" alt="DD-icon" /></span>
+                  <span><img src={downArrow} alt="DD-icon" /></span>
               </Link>
               <div className="dropdown-menu mt-4" aria-labelledby="dropDownMenuButton">
                 <span id="person-show">
-                  <img src="/Icons/person-bounding-box.svg" alt="Person" style={{paddingRight: "0.2rem"}}/> 
+                  <img src={personIcon} alt="Person" style={{paddingRight: "0.2rem"}}/> 
                   {user.name}
                 </span>
                 <hr />
                 <Link to="/users/me" className="dropdown-item">
-                  <img src="/Icons/person-vcard.svg" alt="pro-details" className="py-2" style={{paddingRight: "0.3rem"}} />
+                  <img src="../../Icons/person-vcard.svg" alt="pro-details" className="py-2" style={{paddingRight: "0.3rem"}} />
                   Profile
                 </Link>
                 <Link to="/eats/orders/me/myOrders" className="dropdown-item">
-                  <img src="/Icons/clipboard2-heart.svg" alt="order-icon" className="py-2" style={{paddingRight: "0.2rem"}} />
+                  <img src="../../Icons/clipboard2-heart.svg" alt="order-icon" className="py-2" style={{paddingRight: "0.2rem"}} />
                   Orders
                 </Link>
                 <Link to="/" className="dropdown-item text-danger" onClick={logoutHandler}>
-                  <img src="/Icons/box-arrow-left.svg" alt="logout" className="py-2" style={{paddingRight: "0.3rem"}} />
+                  <img src="../../Icons/box-arrow-left.svg" alt="logout" className="py-2" style={{paddingRight: "0.3rem"}} />
                   LogOut
                 </Link>
               </div>
