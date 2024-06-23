@@ -10,6 +10,9 @@ import logo from "../../Images/logo.png";
 import cartIcon from "../../Icons/cart-check.svg";
 import downArrow from "../../Icons/chevron-down.svg";
 import personIcon from "../../Icons/person-bounding-box.svg";
+import personCard from '../../Icons/person-vcard.svg';
+import ordersIcon from '../../Icons/clipboard2-heart.svg'
+import logoutIcon from '../../Icons/box-arrow-left.svg';
 
 
 const Header = () => {
@@ -95,15 +98,15 @@ const Header = () => {
                 </span>
                 <hr />
                 <Link to="/users/me" className="dropdown-item">
-                  <img src="../../Icons/person-vcard.svg" alt="pro-details" className="py-2" style={{paddingRight: "0.3rem"}} />
+                  <img src={personCard} alt="pro-details" className="py-2" style={{paddingRight: "0.3rem"}} />
                   Profile
                 </Link>
                 <Link to="/eats/orders/me/myOrders" className="dropdown-item">
-                  <img src="../../Icons/clipboard2-heart.svg" alt="order-icon" className="py-2" style={{paddingRight: "0.2rem"}} />
+                  <img src={ordersIcon} alt="order-icon" className="py-2" style={{paddingRight: "0.2rem"}} />
                   Orders
                 </Link>
                 <Link to="/" className="dropdown-item text-danger" onClick={logoutHandler}>
-                  <img src="../../Icons/box-arrow-left.svg" alt="logout" className="py-2" style={{paddingRight: "0.3rem"}} />
+                  <img src={logoutIcon} alt="logout" className="py-2" style={{paddingRight: "0.3rem"}} />
                   LogOut
                 </Link>
               </div>

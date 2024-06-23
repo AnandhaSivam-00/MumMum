@@ -13,7 +13,7 @@ const Profile = () => {
         (
             <>
               <div className="row justify-content-around mt-5 user-info">
-                  <div className="col-12 col-md-5 profile">
+                  <div className="col-12 col-md-6 profile">
                       <div className="d-flex align-items-center mb-4 user-info-welcome">
                           <figure className="avatar avatar-profile text-center mr-3">
                               <img 

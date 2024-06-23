@@ -1,6 +1,7 @@
 import React from 'react';
 import {useNavigate} from "react-router-dom"; //allowes you to route between different routes
 import {useDispatch, useSelector} from "react-redux";
+import alert from '../../Icons/alert-triangle.svg';
 
 import {
     addItemToCart, 
@@ -48,13 +49,13 @@ const Cart = () => {
       {cartItems.length === 0 ? (
         <h2 className="mt-5 d-flex justify-content-between cart-item-count">
             Your Cart is Empty
-            <img src="/Icons/alert-triangle.svg" alt="alert" style={{paddingRight: "1.5rem"}}/>
+            <img src={alert} alt="alert" style={{paddingRight: "1.5rem"}}/>
             </h2>
             ) : (
             <>
               {/* Display the no of items in the cart */}
               <h2 className="mt-5 d-flex justify-content-center cart-item-count">
-                  Your Cart have <b style={{paddingLeft: "1.2rem"}}>{cartItems.length} items</b>
+                  Your Cart have <b style={{paddingLeft: "1.2rem"}}>{cartItems.length} {cartItems.length == 1 ? "Item" : "Items"}</b>
               </h2>
 
               {/* Cart Items */}
@@ -72,7 +73,7 @@ const Cart = () => {
 
                                    <div className="col-4 col-lg-2 mt-4 mt-lg-0">
                                        <p id="cart_item_price">
-                                           <FontAwesomeIcon icon={faIndianRupee} size="lg" />
+                                           <FontAwesomeIcon icon={faIndianRupee} size="sm" />
                                            {item.price}
                                        </p>
                                    </div>

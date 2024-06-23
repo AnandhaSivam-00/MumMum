@@ -1,9 +1,10 @@
 import React from 'react'
+import loaderImage from '../../Images/system-update.png'
 {/* <span className="loading-text">Loading...</span> */}
 const Loader = () => {
   return (
     <div className="loader">
-      <img src="/Images/system-update.png" alt="loading..." className="loading-icon" />
+      <img src={loaderImage} alt="loading..." className="loading-icon" />
       <div className="loading-text-select">
         <span>L</span>
         <span>o</span>

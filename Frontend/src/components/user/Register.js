@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react';
 import {useAlert} from "react-alert";
 import {useDispatch, useSelector} from "react-redux";
 import {register, clearError} from "../../actions/userActions";
+import initalAvatar from '../../Images/My_project.png';
 
 const Register = () => {
     const alert = useAlert();
@@ -16,7 +17,7 @@ const Register = () => {
     const {name, email, password, passwordConfirm, phoneNumber} = user;
 
     const [avatar, setAvatar] = useState("");
-    const [avatarPreview, setAvatarPreview] = useState("/Images/My_project.png");
+    const [avatarPreview, setAvatarPreview] = useState(initalAvatar);
 
     const dispatch = useDispatch();
 

@@ -392,14 +392,14 @@ footer {
   margin-left: auto;
   margin-right: auto;
   margin-top: 20%;
-  width: 80px;
-  height: 80px;
+  width: 110px;
+  height: 110px;
   padding-left: 0;
 }
 
 .loading-icon {
-  width: 80px;
-  height: 80px;
+  width: 90px;
+  height: 90px;
   margin-bottom: 1.1rem;
   animation: rotation 1.0s linear infinite;
 }
