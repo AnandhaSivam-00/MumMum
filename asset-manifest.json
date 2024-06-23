@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/MumMum/static/css/main.2d657545.css",
+    "main.js": "/MumMum/static/js/main.2e1b80cd.js",
+    "static/media/template.webp": "/MumMum/static/media/template.a59c824a7e1ae497bc31.webp",
+    "static/media/system-update.png": "/MumMum/static/media/system-update.fedb1dacd054a2acb58e.png",
+    "index.html": "/MumMum/index.html",
+    "static/media/github.svg": "/MumMum/static/media/github.963f30e28985e40cff78e970aacd0299.svg",
+    "static/media/linkedin.svg": "/MumMum/static/media/linkedin.bc24a247181597abaaeed2f63941939c.svg",
+    "static/media/clipboard2-heart.svg": "/MumMum/static/media/clipboard2-heart.feff6094ae22a93849e8abda9bf99f35.svg",
+    "static/media/person-bounding-box.svg": "/MumMum/static/media/person-bounding-box.d01c4af8cad833d0c96cba946d5c2ced.svg",
+    "static/media/person-vcard.svg": "/MumMum/static/media/person-vcard.03b27025b14c15ed7a73c7166a612605.svg",
+    "static/media/cart-check.svg": "/MumMum/static/media/cart-check.e280489fd9c70c78cfa0ac4b86f69f96.svg",
+    "static/media/box-arrow-left.svg": "/MumMum/static/media/box-arrow-left.b7bbbfcd066ebbdc85b386a61d92eba7.svg",
+    "static/media/alert-triangle.svg": "/MumMum/static/media/alert-triangle.0dba24249455825335b9b46408f674e7.svg",
+    "static/media/twitter-x.svg": "/MumMum/static/media/twitter-x.1b55ee69cf349ad37339264e5780f62d.svg",
+    "static/media/chevron-down.svg": "/MumMum/static/media/chevron-down.d2cf0222bd5dc69b33b3790123374b85.svg",
+    "main.2d657545.css.map": "/MumMum/static/css/main.2d657545.css.map",
+    "main.2e1b80cd.js.map": "/MumMum/static/js/main.2e1b80cd.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2d657545.css",
+    "static/js/main.2e1b80cd.js"
+  ]
+}
