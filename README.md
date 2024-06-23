@@ -1,4 +1,4 @@
-# Mum Mum - The Food Ordering Website
+# Mum Mum - The Food Ordering Website With Stripe Integration
 
 * A Food Ordering Website based on React gives an immersive minimalist experience.
 * This website enables the user to order food from their favourite restaurants with simple steps.
@@ -27,6 +27,8 @@
 **Server:** Node, Express
 
 **Database:** MongoDB Cloud
+
+**Payment Management** Stripe
 
 
 ## Documentation
