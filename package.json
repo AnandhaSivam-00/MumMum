@@ -5,9 +5,9 @@
   "dependencies": {
     "framer-motion": "^10.16.5",
     "mongodb": "4.0",
-    "react-lazy-load-image-component": "^1.6.0"
+    "react-lazy-load-image-component": "^1.6.0",
+    "react-scripts": "^5.0.1"
   },
-
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
@@ -15,7 +15,6 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-
   "devDependencies": {
     "gh-pages": "^6.0.0"
   }

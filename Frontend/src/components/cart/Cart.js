@@ -55,7 +55,7 @@ const Cart = () => {
             <>
               {/* Display the no of items in the cart */}
               <h2 className="mt-5 d-flex justify-content-center cart-item-count">
-                  Your Cart have <b style={{paddingLeft: "1.2rem"}}>{cartItems.length} {cartItems.length == 1 ? "Item" : "Items"}</b>
+                  Your Cart have <b style={{paddingLeft: "1.2rem"}}>{cartItems.length} {cartItems.length === 1 ? "Item" : "Items"}</b>
               </h2>
 
               {/* Cart Items */}

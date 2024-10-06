@@ -1,3 +1,16 @@
+/* html,
+body {
+  font-family: "Amazon Ember";
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+  background-image: url("../src/Images/Template_with_Purple.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+} */
+
 html,
 body {
   font-family: "Amazon Ember";
@@ -6,15 +19,21 @@ body {
   margin: 0px;
   padding: 0px;
   overflow-x: hidden;
-  /* background-color: pink; */
-    background-image:  /*linear-gradient(
-      0deg,
-      rgba(250, 250, 250, 0.801),
-      rgba(250, 250, 250, 0.836)
-    ), */
-    url("../src/Images/template.webp");
+  position: relative;
+}
+
+html::before {
+   content: "";
+   position: absolute;
+ /* top: 0;
+  left: 0; */
+  width: 100%;
+  height: 100%;
+  background-image: url("../src/Images/Template_with_Purple.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  opacity: 0.8;
+  z-index: -1;
 }
 
 /* Scroll Bar behaviour */
@@ -348,7 +367,7 @@ footer {
   border-radius: 2rem;
   background-color: #06b0ff;
   border: none;
-  padding: 0.5rem 2rem;
+  padding: 0.5rem 0.5rem;
 }
 
 #cart_btn:hover {

@@ -80,7 +80,8 @@ const ListOrders = () => {
       sortedOrders.forEach((order) => {
         const orderItemNames = order.orderItems.map((item) => item.name).join(",");
 
-        const restaurant = restaurantList.find((restaurant) => restaurant._id.toString() === order.restaurant._id);
+        const restaurant = restaurantList.find((restaurant) =>  restaurant && restaurant._id && order.restaurant && order.restaurant._id && restaurant._id.toString() === order.restaurant._id);
+        // restaurant._id.toString() === order.restaurant._id
         data.rows.push({
           restaurant: restaurant?.name || "Unknown Restaurant",
           numOfItems: order.orderItems.length,
@@ -113,7 +114,7 @@ const ListOrders = () => {
   return (
     <>
       <div className="cartt mt-4 my-orders shadow-lg">
-        <h1 className="my-5 ">My Orders</h1>
+        <h1 className="my-5">My Orders</h1>
 
         {loading ? (
           <Loader />

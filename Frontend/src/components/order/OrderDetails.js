@@ -8,14 +8,14 @@ import { faIndianRupeeSign } from "@fortawesome/free-solid-svg-icons";
 import Loader from "../Layout/Loader";
 import {getOrderDetails, clearErrors} from "../../actions/orderActions";
 
-const OrderDetails = ({}) => {
+const OrderDetails = () => {
 
   const alert = useAlert();
   const dispatch = useDispatch();
   const {id} = useParams();
   const {loading, error, order = {}} = useSelector((state) => state.orderDetails);
 
-  const {deliveryInfo, orderItems, paymentInfo, user, finalTotal, orderStatus} = order;
+  const {deliveryInfo, orderItems, paymentInfo, user, finalTotal, orderStatus} = order || {};
 
   useEffect(() => {
     dispatch(getOrderDetails(id));
@@ -23,7 +23,7 @@ const OrderDetails = ({}) => {
       alert.error(error);
       dispatch(clearErrors());
     }
-  }, [dispatch, alert, error, id]);
+  }, [dispatch, id, error, alert]);
   
   const deliveryDetails = deliveryInfo && 
     `${deliveryInfo.address}, ${deliveryInfo.city}, ${deliveryInfo.stateName}, ${deliveryInfo.country} - ${deliveryInfo.postalCode}`;

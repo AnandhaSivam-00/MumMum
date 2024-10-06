@@ -1,5 +1,5 @@
-import React, {useState, useEffect, Fragment} from 'react';
-import {Link, useNavigate} from "react-router-dom";
+import React, {Fragment} from 'react';
+import {useNavigate} from "react-router-dom";
 import CheckoutSteps from "./CheckoutSteps";
 import {useSelector} from "react-redux";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
