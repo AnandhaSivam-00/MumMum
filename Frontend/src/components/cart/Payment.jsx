@@ -1,5 +1,5 @@
 import React, {useEffect} from 'react';
-import ChechoutSteps from "../cart/CheckoutSteps";
+import ChechoutSteps from "./CheckoutSteps";
 import {useAlert} from"react-alert";
 import {useDispatch, useSelector} from "react-redux";
 import {createOrder, clearErrors} from "../../actions/orderActions";

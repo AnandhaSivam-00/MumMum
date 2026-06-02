@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import {Link, Route, Routes} from "react-router-dom";
 import {useAlert} from "react-alert";
 import {logout} from "../../actions/userActions";
-import Search from "../Layout/Search";
+import Search from "./Search";
 import "../../App.css";
 import { clearCart } from '../../actions/cartActions';
 import logo from "../../Images/logo.png";

@@ -5,7 +5,7 @@ import {getMenus} from "../actions/menuAction";
 import {getRestaurants} from "../actions/restaurantAction";
 import Fooditem from "./Fooditem";
 import {setRestaurantId} from "../actions/cartActions";
-import Loader from "../components/Layout/Loader";
+import Loader from "./Layout/Loader";
 
 const Menu = (storeId) => {
 

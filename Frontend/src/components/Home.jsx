@@ -1,8 +1,8 @@
 import React, {useEffect} from 'react';
 import {getRestaurants, sortByRatings, sortByReviews, toggleVegOnly} from "../actions/restaurantAction";
-import Restaurant from "../components/Restaurant";
-import Loader from "../components/Layout/Loader";
-import Message from "../components/Message";
+import Restaurant from "./Restaurant";
+import Loader from "./Layout/Loader";
+import Message from "./Message";
 import {useDispatch, useSelector} from "react-redux";
 import CountRestaurant from './CountRestaurant';
 import {useParams} from "react-router-dom";
