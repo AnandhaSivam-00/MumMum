@@ -1,6 +1,5 @@
 {
-  "homepage": "https://MumMum",
-  "name": "anand-app",
+  "name": "mum-mum-frontend",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
