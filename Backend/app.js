@@ -78,6 +78,7 @@ const express = require(_0x38fc6d(0x110)),
   bodyParser = require("body-parser"),
   cloudinary = require(_0x38fc6d(0x125)),
   fileUpload = require("express-fileupload"),
+  cors = require("cors"),
   errorMiddleware = require("./middlewares/errors");
 function _0x4299(_0x3cca63, _0xca55f4) {
   const _0x481cf0 = _0x481c();
@@ -91,6 +92,12 @@ function _0x4299(_0x3cca63, _0xca55f4) {
   );
 }
 app["use"](express["json"]()),
+  app["use"](cors({
+    origin: ["https://mum-mum.pages.dev", "http://localhost:3000", "http://localhost:5173"],
+    credentials: true,
+    methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+    allowedHeaders: ["Content-Type", "Authorization", "X-Requested-With"]
+  })),
   app[_0x38fc6d(0x128)](bodyParser[_0x38fc6d(0x117)]({ extended: !![] })),
   app[_0x38fc6d(0x128)](cookieParser()),
   app[_0x38fc6d(0x128)](fileUpload()),
