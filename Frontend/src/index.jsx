@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import store from "./store";
 import {Provider} from "react-redux";
+import axios from "axios";
 import App from './App';
 
 import {positions, transitions, Provider as AlertProvider} from "react-alert";
@@ -13,8 +14,12 @@ const option = {
   transition: transitions.SCALE
 }  //define configuration options for display the alert notification
 
-
-
+if(import.meta.env.VITE_BACKEND_URL) {
+  axios.defaults.baseURL = import.meta.env.VITE_BACKEND_URL;
+}
+else {
+  throw new Error("Backend URL not found");
+}
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
