@@ -1,14 +1,14 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Mum Mum",
+  "name": "Mum Mum - The minimal Food Ordering Website",
   "icons": [
     {
-      "src": "/ResizedLogo.png",
+      "src": "/brand-logo.png",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     },
     {
-      "src": "ResizedLogo.png",
+      "src": "brand-logo.png",
       "type": "image/png",
       "sizes": "192x192"
     },
