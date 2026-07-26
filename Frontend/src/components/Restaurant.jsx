@@ -5,7 +5,7 @@ import {Link} from "react-router-dom";
 
 const Restaurant = ({restaurant}) => {
   return (
-      <div className="col-sm-6 col-md-6 col-lg-3 shadow-lg my-3 mb-5 p-3">
+      <div className="col-sm-6 col-md-6 col-lg-3 my-3 mb-5 p-3">
           <div className="card p-3 rounded">
               <Link to={`/eats/stores/${restaurant._id}/menus`} className="btn btn-block">
                   <img className="card-img-top mx-auto"

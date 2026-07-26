@@ -12,7 +12,7 @@ const NewPassword = () => {
     const alert = useAlert();
     const dispatch = useDispatch();
 
-    const {error, success} = useSelector((state) => state.forgotPassword);
+    const {error, success, loading} = useSelector((state) => state.forgotPassword);
 
     const {token} = useParams();
     const navigate = useNavigate();
@@ -69,8 +69,9 @@ const NewPassword = () => {
                     type="submit" 
                     className="btn btn-block py-3" 
                     id="new_password_button"
+                    disabled={loading ? true : false}
                   >
-                      Set New Password
+                      {loading ? "Loading..." : "Set New Password"}
                   </button>
               </form>
           </div>

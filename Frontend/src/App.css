@@ -303,6 +303,7 @@ form #login_btn:hover {
 
 .card:hover {
   border-color: var(--light-bronze);
+  box-shadow: 0 -4px 16px -2px rgba(45, 38, 30, 0.04);
 }
 
 .card-title a {

@@ -47,6 +47,7 @@ const ForgotPassword = () => {
                         value={email}
                         onChange={(e) => setEmail(e.target.value)}
                         required
+                        disabled={loading ? true : false}
                       />
                   </div>
                   <button 
@@ -55,7 +56,7 @@ const ForgotPassword = () => {
                     id="forgot_password_button"
                     disabled={loading ? true : false}
                   >
-                      Send Email
+                      {loading ? "Sending..." : "Send Email"}
                   </button>
               </form>
           </div>
