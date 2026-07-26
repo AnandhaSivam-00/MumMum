@@ -12,7 +12,7 @@ function App() {
     <Router basename="/">
       <div className="App">
         <Header />
-        <div className="container container-fluid">
+        <div className="container-fluid flex-grow-1">
           <AnimatedRoutes />
         </div>
         <Footer />
