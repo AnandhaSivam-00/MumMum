@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react';
 import {useAlert} from "react-alert";
 import {useDispatch, useSelector} from "react-redux";
 import {register, clearError} from "../../actions/userActions";
-import initalAvatar from '../../Images/My_project.png';
+import initalAvatar from '../../Images/avatar.png';
 
 const Register = () => {
     const alert = useAlert();

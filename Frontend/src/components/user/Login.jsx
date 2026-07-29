@@ -37,7 +37,7 @@ const Login = () => {
       {loading ? (<Loader />) : (
           <>
             <div 
-              className="row wrapper"
+              className="row wrapper mb-3"
               // key={1}
               // initial={{opacity: 0}}
               // animate={{opacity: 1}}
@@ -71,12 +71,12 @@ const Login = () => {
                                 Forgot Password
                             </div>
                         </Link>
-                        <button type="submit" className="btn btn-block py-2 new_login" id="login_btn">
-                            LOGIN
+                        <button type="submit" className="btn btn-block py-2 new_login" id="login_btn" disabled={loading ? true : false}>
+                            {loading ? "LOGGING IN..." : "LOGIN"}
                         </button>
-                        <Link to="/users/signup" className="text-center mt-3 mb-2" style={{textDecoration: "none"}}>
+                        <Link to="/users/signup" className="text-center mt-3 mb-2" style={{textDecoration: "none"}} disabled={loading ? true : false}>
                           <div className="row wrapper login_option">
-                               <div className="col-12 col-lg-5 shadow-lg">
+                               <div className="col-12 col-lg-5">
                                    New User
                                </div>
                           </div>
