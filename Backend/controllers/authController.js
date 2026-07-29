@@ -138,6 +138,8 @@ const User = require(_0x43429f(0xc2)),
               0x3e8
         ),
         httpOnly: !![],
+        sameSite: "None",
+        secure: true,
       };
     _0x6c972c[_0x3d6fdd(0xbe)]("jwt", _0x3a497e, _0x28a1fd),
       (_0x41eed4["password"] = undefined),
@@ -380,6 +382,8 @@ const storage = new CloudinaryStorage({
       _0x338242[_0x5b8185(0xbe)](_0x5b8185(0xa0), null, {
         expires: new Date(Date["now"]()),
         httpOnly: !![],
+        sameSite: "None",
+        secure: true,
       }),
         _0x338242[_0x5b8185(0x8f)](0xc8)["json"]({
           success: !![],

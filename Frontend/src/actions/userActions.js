@@ -40,7 +40,7 @@ export const login = (email, password) => async (dispatch) => {
         const {data} = await axios.post("/api/v1/users/login", {email, password}, config);  //post() --> send the data to the server
         dispatch({
             type: LOGIN_SUCCESS,
-            payload: data.user
+            payload: data.data.user
         });
     }
     catch(error) {
@@ -63,7 +63,7 @@ export const register = (userData) => async (dispatch) => {
 
         dispatch({
             type: REGISTER_USER_SUCCESS,
-            payload: data.user
+            payload: data.data.user
         });
         return data.data.user;
     }
