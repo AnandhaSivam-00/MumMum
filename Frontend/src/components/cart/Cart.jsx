@@ -64,7 +64,7 @@ const Cart = () => {
                       {cartItems.map((item) => (
                           <>
                             <div className="cart-items" key={item.fooditem}>
-                               <div className="row">
+                               <div className="row align-items-center">
                                    <div className="col-4 col-lg-3">
                                         <img src={item.image} alt="cart items" height="90" width="115" className="img-border-round" />
                                    </div>
@@ -72,7 +72,7 @@ const Cart = () => {
                                    <div className="col-5 col-lg-3">{item.name}</div>
 
                                    <div className="col-4 col-lg-2 mt-4 mt-lg-0">
-                                       <p id="cart_item_price">
+                                       <p id="cart_item_price" style={{ marginBottom: '0' }}>
                                            <FontAwesomeIcon icon={faIndianRupee} size="sm" />
                                            {item.price}
                                        </p>
@@ -87,7 +87,6 @@ const Cart = () => {
                                    </div>
 
                                    <div className="col-4 col-lg-1 mt-4 mt-lg-0">
-                                       {/* i --> stands for icon tag */}
                                        <i className="fa fa-trash btn btn-danger" id="delete_cart_item" onClick={() => removeCartItemHandler(item.fooditem)} />
                                    </div>
                                </div>

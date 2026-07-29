@@ -1,4 +1,3 @@
-import React, { Fragment } from 'react'
 import { useDispatch, useSelector } from 'react-redux';
 import { Link, Route, Routes } from "react-router-dom";
 import { useAlert } from "react-alert";
@@ -30,20 +29,20 @@ const Header = () => {
     return (
         <>
             <nav className="navbar sticky-top py-2 px-3">
-                <div className="container-fluid d-flex flex-wrap align-items-center justify-content-between">
-                    <div className="d-flex align-items-center">
-                        <Link to="/">
-                            <img src={logo} alt="logo" className="logo" style={{ maxWidth: '5rem', height: 'auto' }} />
+                <div className="w-100 row mx-0 align-items-center justify-content-between">
+                    <div className="col-6 col-md-3 d-flex align-items-center px-0">
+                        <Link to="/" className="d-flex align-items-center w-auto text-decoration-none">
+                            <img src={logo} alt="logo" className="logo" />
+                            <h1 className="brand-name mb-0 ml-2">Mum Mum</h1>
                         </Link>
                     </div>
 
-                    <div className="d-flex align-items-center justify-content-end order-md-3 col-auto px-0">
+                    <div className="col-6 col-md-3 order-2 order-md-3 d-flex align-items-center justify-content-end px-0">
                         <Link
                             to="/cart"
-                            className="position-relative d-inline-block mr-2 mr-sm-3"
-                            style={{ textDecoration: "none" }}
+                            className="position-relative d-inline-block mr-2 mr-sm-3 text-decoration-none"
                             onClick={e => {
-                                if (!user) {
+                                if(!user) {
                                     e.preventDefault();
                                 }
                             }}
@@ -65,22 +64,22 @@ const Header = () => {
                             </span>
                         </Link>
                         {user ? (
-                            <div className="dropdown d-inline-block">
+                            <div className="dropdown d-inline-block position-relative">
                                 <Link to="/"
-                                    className="btn dropdown-toggle text-white d-inline-flex align-items-center p-0"
+                                    className="btn text-white d-inline-flex align-items-center p-0 text-decoration-none"
                                     type="button"
                                     id="dropDownMenuButton"
                                     data-toggle="dropdown"
+                                    data-display="static"
                                     aria-haspopup="true"
                                     aria-expanded="false"
-                                    style={{ textDecoration: 'none' }}
                                 >
                                     <figure className="avatar avatar-nav m-0">
                                         <img src={user.avatar && user.avatar.url} alt={user && user.name} className="rounded-circle" />
                                     </figure>
                                     <span className="ml-1"><img src={downArrow} alt="DD-icon" /></span>
                                 </Link>
-                                <div className="dropdown-menu mt-2 dropdown-menu-right" aria-labelledby="dropDownMenuButton">
+                                <div className="dropdown-menu dropdown-menu-right mt-2" id="nav-dropdown-menu" aria-labelledby="dropDownMenuButton">
                                     <span id="person-show" className="dropdown-item-text font-weight-bold d-flex align-items-center py-2 px-3">
                                         <img src={personIcon} alt="Person" className="mr-2" />
                                         {user.name}
@@ -109,17 +108,11 @@ const Header = () => {
                         )}
                     </div>
 
-                    <div className="col-12 col-md-5 mt-2 mt-md-0 px-0 order-md-2 mx-auto">
-                        {user ? (
-                            <Routes>
-                                <Route path="/" element={<Search />} />
-                                <Route path="/eats/stores/search/:keyword" element={<Search />} />
-                            </Routes>
-                        ) : (
-                            <div className="header-heading d-flex justify-content-start my-2 my-md-0">
-                                <h1 className="brand-name mb-0">Mum Mum</h1>
-                            </div>
-                        )}
+                    <div className="col-12 col-md-6 order-3 order-md-2 my-auto mx-auto d-flex align-items-start">
+                        <Routes>
+                            <Route path="/" element={<Search />} />
+                            <Route path="/eats/stores/search/:keyword" element={<Search />} />
+                        </Routes>
                     </div>
                 </div>
             </nav>

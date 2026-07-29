@@ -48,11 +48,11 @@ const handleToggleVegOnly = () => {
         <>  
         <section>
           <div className="sort">
-            <button className="sort_veg p-3" onClick={handleToggleVegOnly}>
+            <button className="sort_veg p-2" onClick={handleToggleVegOnly}>
               {showVegOnly ? "Show All" : "Pure Veg"}
             </button>
-            <button className="sort_rev p-3" onClick={handleSortByReviews}>Sort By Reviews</button>
-            <button className="sort_rate p-3" onClick={handleSortByRatings}>Sort By Ratings</button>
+            <button className="sort_rev p-2" onClick={handleSortByReviews}>Sort By Reviews</button>
+            <button className="sort_rate p-2" onClick={handleSortByRatings}>Sort By Ratings</button>
           </div>
           <div className="row mt-4">  
               {restaurants && restaurants.restaurants ? (
