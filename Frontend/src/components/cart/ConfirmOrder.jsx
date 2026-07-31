@@ -66,10 +66,10 @@ const ConfirmOrder = () => {
 
                         {/* Delivery Info Card */}
                         <div className="cartt shadow p-4 mb-4">
-                            <h4 className="font-weight-bold border-bottom pb-3 mb-3">
+                            <h3 className="font-weight-bold border-bottom pb-3 mb-3">
                                 <FontAwesomeIcon icon={faMapMarkerAlt} className="mr-2 icon-bronze" />
                                 Delivery Info
-                            </h4>
+                            </h3>
 
                             <div className="mb-3 d-flex align-items-center">
                                 <div
@@ -170,7 +170,7 @@ const ConfirmOrder = () => {
 
                     {/* Right Column: Order Summary */}
                     <div className="col-12 col-lg-5 col-xl-4 mb-4">
-                        <div className="w-100 cartt shadow p-3 sticky-top">
+                        <div className="w-100 cartt shadow p-3">
                             <h4 className="font-weight-bold pb-3 mb-3">
                                 <FontAwesomeIcon icon={faReceipt} className="mr-2 icon-bronze" />
                                 Order Summary
@@ -224,7 +224,7 @@ const ConfirmOrder = () => {
 
                             <button
                                 type="button"
-                                className="btn btn-block py-3 font-weight-bold"
+                                className="btn btn-block py-3"
                                 id="checkout_btn"
                                 onClick={processToPayment}
                             >

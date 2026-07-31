@@ -68,7 +68,7 @@ const Delivery = () => {
       
       <div className="row wrapper">
           <div className="col-10 col-lg-5 shadow cartt" id="address-page">
-              <h1 className="mb-4 mt-4 text-center">Delivery Address</h1>
+              <h3 className="mb-4 mt-4 text-center font-weight-bold">Delivery Address</h3>
               <form onSubmit={submitHandler}>
 
                   <div className="form-group">
