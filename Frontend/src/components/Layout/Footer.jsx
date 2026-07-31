@@ -2,7 +2,7 @@ import React from 'react';
 
 function Footer() {
   return (
-    <footer>
+    <footer className='mt-4'>
       <div className="container text-center">
         <div className="declaration">
           <p className="mb-1">Crafted with <span style={{ color: '#c0392b' }}>&#9829;</span></p>

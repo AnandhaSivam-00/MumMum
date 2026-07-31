@@ -113,8 +113,8 @@ const ListOrders = () => {
 
   return (
     <>
-      <div className="cartt mt-4 my-orders shadow-lg">
-        <h1 className="my-5">My Orders</h1>
+      <div className="container-fluid cartt mt-4 my-orders shadow-lg">
+        <h1 className="mb-5">My Orders</h1>
 
         {loading ? (
           <Loader />
