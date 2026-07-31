@@ -8,7 +8,6 @@ import {
     faIndianRupeeSign,
     faCreditCard,
     faLock,
-    faShieldAlt,
     faCalendarAlt,
     faKey
 } from "@fortawesome/free-solid-svg-icons";
@@ -77,7 +76,8 @@ const Payment = () => {
     }
 
     const paymentData = {
-        amount: orderInfo ? Math.round(orderInfo.finalTotal * 100) : 0 // stripe works with cents
+        amount: orderInfo ? Math.round(orderInfo.finalTotal * 100) : 0, // stripe works with cents
+        description: "Export of food item purchase"
     };
 
     // Submit payment handler
@@ -92,7 +92,6 @@ const Payment = () => {
             const config = {
                 headers: { "Content-Type": "application/json" }
             };
-            paymentData.description = "Payment for food items Purchase";
             const res = await axios.post("/api/v1/payment/process", paymentData, config);
             const clientSecret = res.data.client_secret;
 
@@ -108,7 +107,24 @@ const Payment = () => {
                     card: elements.getElement(CardNumberElement),
                     billing_details: {
                         name: user.name,
-                        email: user.email
+                        email: user.email,
+                        address: {
+                            line1: deliveryInfo ? deliveryInfo.address : "",
+                            city: deliveryInfo ? deliveryInfo.city : "",
+                            state: deliveryInfo ? deliveryInfo.stateName : "",
+                            postal_code: deliveryInfo ? deliveryInfo.postalCode : "",
+                            country: "IN"
+                        }
+                    }
+                },
+                shipping: {
+                    name: user.name,
+                    address: {
+                        line1: deliveryInfo ? deliveryInfo.address : "",
+                        city: deliveryInfo ? deliveryInfo.city : "",
+                        state: deliveryInfo ? deliveryInfo.stateName : "",
+                        postal_code: deliveryInfo ? deliveryInfo.postalCode : "",
+                        country: "IN"
                     }
                 }
             });

@@ -72,6 +72,7 @@ const stripe = require(_0x3a6c30(0x199))(
       _0x250b6c = await stripe["paymentIntents"]["create"]({
         amount: _0x10f77f[_0x38302a(0x19b)][_0x38302a(0x1a4)],
         currency: _0x38302a(0x195),
+        description: _0x10f77f[_0x38302a(0x19b)]["description"] || "Export of food item purchase",
         metadata: { integration_check: _0x38302a(0x19c) },
       });
     _0xd5d944["status"](0xc8)[_0x38302a(0x191)]({
