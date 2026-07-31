@@ -6,6 +6,7 @@ import Message from "./Message";
 import {useDispatch, useSelector} from "react-redux";
 import CountRestaurant from './CountRestaurant';
 import {useParams} from "react-router-dom";
+import { toast } from "sonner";
 
 
 const Home = () => {
@@ -20,7 +21,8 @@ const Home = () => {
 
   useEffect(() => {
     if(restaurantsError){
-      return alert.error(restaurantsError);
+      toast.error(restaurantsError);
+      return;
     }
     dispatch(getRestaurants(keyword));
   }, [dispatch, restaurantsError, keyword]);

@@ -3,7 +3,7 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faIndianRupeeSign} from "@fortawesome/free-solid-svg-icons";
 // import { LazyLoadImage } from "react-lazy-load-image-component";
 import {useDispatch, useSelector} from "react-redux";
-import {useAlert} from "react-alert";
+import { toast } from "sonner";
 import {addItemToCart, updateCartQuantity, removeItemFromCart} from "../actions/cartActions";
 
 const Fooditem = ({fooditem}) => {
@@ -11,7 +11,6 @@ const Fooditem = ({fooditem}) => {
     const [showButtons, setShowButtons] = useState(false);
 
     const dispatch = useDispatch();
-    const alert = useAlert();
 
     const cartItems = useSelector((state) => state.cart.cartItems);
     const {user} = useSelector((state) => state.auth);
@@ -46,14 +45,14 @@ const Fooditem = ({fooditem}) => {
                 if(newQuantity > 0) {
                     dispatch(addItemToCart(fooditem._id, newQuantity));
                     dispatch(updateCartQuantity(fooditem._id, newQuantity)).then(() => {
-                        alert.success("Items added to the cart successfully");
+                        toast.success("Items added to the cart successfully");
                         setShowButtons(true);
                     }).catch((error) => {
-                        alert.error("Failed to add items to the cart");
+                        toast.error("Failed to add items to the cart");
                     });
                 }
                 else {
-                    alert.error("Please select a quantity greater than 0");
+                    toast.error("Please select a quantity greater than 0");
                 }
                 return newQuantity;
             });

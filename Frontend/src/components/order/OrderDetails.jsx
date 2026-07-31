@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
-import { useAlert } from "react-alert";
+import { toast } from "sonner";
 import { useDispatch, useSelector } from "react-redux";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -27,7 +27,6 @@ import { getOrderDetails, clearErrors } from "../../actions/orderActions";
  * @returns {JSX.Element} OrderDetails component layout
  */
 const OrderDetails = () => {
-  const alert = useAlert();
   const dispatch = useDispatch();
   const { id } = useParams();
   const { loading, error, order = {} } = useSelector((state) => state.orderDetails);
@@ -37,10 +36,10 @@ const OrderDetails = () => {
   useEffect(() => {
     dispatch(getOrderDetails(id));
     if(error) {
-      alert.error(error);
+      toast.error(error);
       dispatch(clearErrors());
     }
-  }, [dispatch, id, error, alert]);
+  }, [dispatch, id, error]);
 
   // Construct full delivery address string
   const deliveryDetails = deliveryInfo && 

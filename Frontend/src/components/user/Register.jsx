@@ -1,11 +1,10 @@
 import React, {useState, useEffect} from 'react';
-import {useAlert} from "react-alert";
+import { toast } from "sonner";
 import {useDispatch, useSelector} from "react-redux";
 import {register, clearError} from "../../actions/userActions";
 import initalAvatar from '../../Images/avatar.png';
 
 const Register = () => {
-    const alert = useAlert();
     const [user, setUser] = useState({
         name: "",
         email: "",
@@ -29,15 +28,15 @@ const Register = () => {
             window.location.href = "/";
         }
         if(error) {
-            alert.error(error);
+            toast.error(error);
             dispatch(clearError());
         }
-    }, [dispatch, alert, isAuthenticated, error]);
+    }, [dispatch, isAuthenticated, error]);
 
     const submitHandler = (e) => {
         e.preventDefault();
         if(password !== passwordConfirm) {
-            alert.error("Password do not Match");
+            toast.error("Password do not Match");
             return;
         }
         const formData = new FormData();

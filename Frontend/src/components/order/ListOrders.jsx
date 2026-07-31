@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faIndianRupeeSign } from "@fortawesome/free-solid-svg-icons";
-import { useAlert } from "react-alert";
+import { toast } from "sonner";
 import { useDispatch, useSelector } from "react-redux";
 
 import { MDBDataTable } from "mdbreact";
@@ -12,7 +12,6 @@ import { myOrders, clearErrors } from "../../actions/orderActions";
 
 const ListOrders = () => {
 
-  const alert = useAlert();
   const dispatch = useDispatch();
   const {loading, error, orders} = useSelector((state) => state.myOrders);
 
@@ -25,10 +24,10 @@ const ListOrders = () => {
     dispatch(getRestaurants());
 
     if(error) {
-      alert.error(error);
+      toast.error(error);
       dispatch(clearErrors());
     }
-  }, [dispatch, error, alert]);
+  }, [dispatch, error]);
 
   const setOrders = () => {
     const data = {

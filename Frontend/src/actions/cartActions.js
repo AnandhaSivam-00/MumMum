@@ -1,4 +1,5 @@
 import axios from "axios";
+import { toast } from "sonner";
 import {
     ADD_TO_CART,
     REMOVE_ITEM_CART,
@@ -31,7 +32,7 @@ export const addItemToCart = (id, quantity) => async (dispatch, getState) => {
         localStorage.setItem("cartItems", JSON.stringify(getState().cart.cartItems));
     }
     catch(error) {
-        alert.error("Failed to add item to cart. Please Try Again... Sorry for the inconvinence");
+        toast.error("Failed to add item to cart. Please Try Again... Sorry for the inconvinence");
     }
 };
 

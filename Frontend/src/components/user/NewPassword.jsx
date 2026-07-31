@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react';
-import {useAlert} from "react-alert";
+import { toast } from "sonner";
 import {useDispatch, useSelector} from "react-redux";
 import {resetPassword, clearError} from "../../actions/userActions";
 import {useParams, useNavigate} from "react-router-dom";
@@ -9,7 +9,6 @@ const NewPassword = () => {
     const [password, setPassword] = useState("");
     const [passwordConfirm, setPasswordConfirm] = useState("");
 
-    const alert = useAlert();
     const dispatch = useDispatch();
 
     const {error, success, loading} = useSelector((state) => state.forgotPassword);
@@ -19,15 +18,15 @@ const NewPassword = () => {
 
     useEffect(() => {
         if(error) {
-            alert.error(error);
+            toast.error(error);
             dispatch(clearError());
         }
         if(success) {
-            alert.success("Password Updated successfully");
+            toast.success("Password Updated successfully");
             navigate("/users/login");
         }
 
-    }, [dispatch, alert, error, success, navigate]);
+    }, [dispatch, error, success, navigate]);
 
     const sumbitHandler = (e) => {
         e.preventDefault();

@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react';
-import {useAlert} from "react-alert";
+import { toast } from "sonner";
 import {useDispatch, useSelector} from "react-redux";
 import {forgotPassword, clearError} from "../../actions/userActions";
 
@@ -7,21 +7,20 @@ const ForgotPassword = () => {
 
     const [email, setEmail] = useState("");
 
-    const alert = useAlert();
     const dispatch = useDispatch();
 
     const {loading, message, error} = useSelector((state) => state.forgotPassword);
 
     useEffect(() => {
         if(error) {
-            alert.error(error);
+            toast.error(error);
             dispatch(clearError());
         }
         if(message) {
-            alert.success(message);
+            toast.success(message);
         }
 
-    }, [dispatch, alert, error, message]);
+    }, [dispatch, error, message]);
 
     const sumbitHandler = (e) => {
         e.preventDefault();

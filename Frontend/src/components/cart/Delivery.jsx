@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 // import {countries} from "countries-list";  //list of countries from external module
 import {useNavigate} from "react-router-dom";
+import { toast } from "sonner";
 
 import {useDispatch, useSelector} from "react-redux";
 import {saveDeliveryInfo} from "../../actions/cartActions";
@@ -37,7 +38,7 @@ const Delivery = () => {
         setCountryState(getStateData);
       }
       catch(error) {
-        alert("Choose the Country and State before 'Continue' ");
+        toast.error("Choose the Country and State before 'Continue' ");
       }
     }
 
@@ -51,7 +52,7 @@ const Delivery = () => {
         console.log(countryStateName);
       }
       catch(error) {
-        alert("Choose the Country and State before 'Continue' ");
+        toast.error("Choose the Country and State before 'Continue' ");
       }
     }
 

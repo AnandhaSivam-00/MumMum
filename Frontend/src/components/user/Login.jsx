@@ -1,7 +1,7 @@
 import React, {useEffect, useState, useContext} from 'react';
 import {Link} from "react-router-dom";
 import Loader from "../Layout/Loader";
-import {useAlert} from "react-alert";
+import { toast } from "sonner";
 import {useDispatch, useSelector} from "react-redux";
 import {login, clearError} from "../../actions/userActions";
 // import { motion } from "framer-motion";
@@ -11,20 +11,19 @@ const Login = () => {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
 
-    const alert = useAlert();
     const dispatch = useDispatch();
     const {isAuthenticated, loading, error} = useSelector((state) => state.auth);
 
     useEffect(() => {
         if(isAuthenticated) {
             window.location.href = "/";  //home page
-            alert.success("Welcome...");
+            toast.success("Welcome...");
         }
         if(error) {
-            alert.error(error);
+            toast.error(error);
             dispatch(clearError());
         }
-    }, [dispatch, alert, isAuthenticated, error]);
+    }, [dispatch, isAuthenticated, error]);
 
     //Handling form submission
     const submitHandler = (e) => {

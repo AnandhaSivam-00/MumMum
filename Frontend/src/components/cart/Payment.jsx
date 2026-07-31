@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import CheckoutSteps from "./CheckoutSteps";
-import { useAlert } from "react-alert";
+import { toast } from "sonner";
 import { useDispatch, useSelector } from "react-redux";
 import { createOrder, clearErrors } from "../../actions/orderActions";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -46,7 +46,6 @@ const options = {
  * @returns {JSX.Element} Payment component layout
  */
 const Payment = () => {
-    const alert = useAlert();
     const stripe = useStripe();
     const elements = useElements();
     const dispatch = useDispatch();
@@ -58,10 +57,10 @@ const Payment = () => {
 
     useEffect(() => {
         if(error) {
-            alert.error(error);
+            toast.error(error);
             dispatch(clearErrors());
         }
-    }, [dispatch, alert, error]);
+    }, [dispatch, error]);
 
     const order = {
         orderItems: cartItems,
@@ -115,7 +114,7 @@ const Payment = () => {
             });
 
             if(result.error) {
-                alert.error(result.error.message);
+                toast.error(result.error.message);
                 if(payBtn) {
                     payBtn.disabled = false;
                 }
@@ -131,7 +130,7 @@ const Payment = () => {
                     navigate("/success");
                 }
                 else {
-                    alert.error("There is some issue occured while payment processing");
+                    toast.error("There is some issue occured while payment processing");
                     if(payBtn) {
                         payBtn.disabled = false;
                     }
@@ -143,10 +142,10 @@ const Payment = () => {
                 payBtn.disabled = false;
             }
             if(error.response && error.response.data && error.response.data.message) {
-                alert.error(error.response.data.message);
+                toast.error(error.response.data.message);
             }
             else {
-                alert.error("An unexpected error occurred. Please try again.");
+                toast.error("An unexpected error occurred. Please try again.");
             }
         }
     };

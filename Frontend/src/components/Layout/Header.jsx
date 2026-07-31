@@ -1,6 +1,6 @@
 import { useDispatch, useSelector } from 'react-redux';
 import { Link, Route, Routes } from "react-router-dom";
-import { useAlert } from "react-alert";
+import { toast } from "sonner";
 import { logout } from "../../actions/userActions";
 import Search from "./Search";
 import "../../App.css";
@@ -16,14 +16,13 @@ import logoutIcon from '../../Icons/box-arrow-left.svg';
 
 const Header = () => {
     const { cartItems } = useSelector((state) => state.cart);
-    const alert = useAlert();
     const dispatch = useDispatch();
     const { user, loading } = useSelector((state) => state.auth);
 
     const logoutHandler = () => {
         dispatch(clearCart());
         dispatch(logout());
-        alert.success("Good Bye...");
+        toast.success("Good Bye...");
     }
 
     return (
