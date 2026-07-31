@@ -46,6 +46,7 @@ IMPORTANT: Backend codes are obfuscated
 ## Code style guidelines
 
 - Always follow the themes and styles present in the App.css (frontend/src/App.css)
+- Must use the bootstrap for the component styling, if the desired style is not achieved using bootstrap, then use the CSS styling.
 - Don't use the tailwindCSS styling use the Bootstrap for styling
 - The design must be responsive that adapt all the screen sizes
 - Provide the short one line comments for better understanding and readability, Use the JSDoc style commenting

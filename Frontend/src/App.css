@@ -1,11 +1,10 @@
 :root {
-  --tea-green: #ccd5ae;
+  --tea-green: #cadb94;
   --beige: #e9edc9;
   --cornsilk: #fefae0;
   --papaya-whip: #faedcd;
   --light-bronze: #d4a373;
 
-  /* Minimalist contrast & tone helper variables */
   --text-dark: #2d261e;
   --text-muted: #736b60;
   --text-light: #fefae0;
@@ -829,6 +828,14 @@ div span:nth-child(8) { animation-delay: 1.8s; }
   border: 1px solid var(--border-color);
   border-radius: 1rem;
   box-shadow: 0px 2px 10px var(--shadow-subtle);
+  color: var(--text-dark);
+}
+
+.inner-wrapper {
+  padding: 1rem 1.2rem;
+  background-color: var(--cornsilk);
+  border: 1px solid var(--border-color);
+  border-radius: 1rem;
   color: var(--text-dark);
 }
 
