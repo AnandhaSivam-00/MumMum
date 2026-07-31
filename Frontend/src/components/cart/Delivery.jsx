@@ -67,7 +67,7 @@ const Delivery = () => {
       <CheckoutSteps delivery />
       
       <div className="row wrapper">
-          <div className="col-10 col-lg-5 shadow-lg cartt" id="address-page">
+          <div className="col-10 col-lg-5 shadow cartt" id="address-page">
               <h1 className="mb-4 mt-4 text-center">Delivery Address</h1>
               <form onSubmit={submitHandler}>
 
