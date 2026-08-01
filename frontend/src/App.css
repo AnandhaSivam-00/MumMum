@@ -1779,3 +1779,42 @@ ul.CTAs a {
   color: var(--text-dark);
   margin-top: 0.5rem;
 }
+
+/* 404 Page */
+.not-found-title {
+  font-size: 8rem;
+  font-weight: 700;
+  color: var(--light-bronze);
+  margin-bottom: -1rem;
+}
+
+.not-found-subtitle {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+.not-found-text {
+  font-size: 1.2rem;
+  color: var(--text-muted);
+}
+
+.not-found-btn {
+  background-color: var(--light-bronze);
+  color: var(--cornsilk);
+  font-weight: 600;
+  padding: 0.8rem 2rem;
+  border-radius: 2rem;
+  border: 1px solid var(--light-bronze);
+  transition: all 0.2s ease;
+}
+
+.not-found-btn:hover {
+  background-color: var(--bronze-hover);
+  color: var(--cornsilk);
+  border-color: var(--bronze-hover);
+}
+
+.not-found-container {
+  min-height: 70vh;
+}
