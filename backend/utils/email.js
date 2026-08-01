@@ -122,3 +122,33 @@ module[_0x422197(0x15b)] = class Email {
     );
   }
 };
+
+// Extension of the Email class to add new sending features without disrupting obfuscation
+const EmailClass = module.exports;
+
+EmailClass.prototype.sendLogin = async function() {
+  await this.send("login", "New login to your Mum Mum account");
+};
+
+EmailClass.prototype.sendOrderPlaced = async function(order) {
+  const _0x4c9189 = _0x422197;
+  const _0xfa45d8 = pug[_0x4c9189(0x162)](
+    __dirname + "/../view/orderPlaced" + _0x4c9189(0x170),
+    {
+      firstName: this["firstName"],
+      url: this[_0x4c9189(0x167)],
+      subject: "Order Confirmation - Mum Mum",
+      order: order
+    }
+  );
+  
+  const _0x1551ff = {
+    from: this["from"],
+    to: this["to"],
+    subject: "Order Confirmation - Mum Mum",
+    html: _0xfa45d8,
+    text: htmlToText["convert"](_0xfa45d8),
+  };
+  
+  await this[_0x4c9189(0x160)]()["sendMail"](_0x1551ff);
+};

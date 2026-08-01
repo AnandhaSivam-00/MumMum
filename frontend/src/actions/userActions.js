@@ -153,7 +153,7 @@ export const forgotPassword = (email) => async (dispatch) => {
         //To initiate the forgot password action not changing
         dispatch({
             type: FORGOT_PASSWORD_SUCCESS,
-            payload: data.success
+            payload: data.message
         });
     }
     catch(error) {
