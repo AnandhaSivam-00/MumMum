@@ -61,6 +61,7 @@ const Order = require(_0xd78b44(0x1dc)),
         user: _0x4e98fd[_0x2416f8(0x1df)]["id"],
         restaurant: _0x4e98fd[_0x2416f8(0x1e3)][_0x2416f8(0x1ed)],
       });
+    try { await new Email(_0x4e98fd.user, "").sendOrderPlaced(_0x1e5f83); } catch (err) { console.error("Error sending order email:", err); }
     _0xb1357[_0x2416f8(0x1e0)](0xc8)["json"]({
       success: !![],
       order: _0x1e5f83,

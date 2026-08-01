@@ -79,7 +79,7 @@ const AnimatedRoutes = () => {
               <Route path="/success" element={<OrderSuccess />} />
               <Route path="/eats/orders/me/myOrders" element={<ListOrders />} />
               <Route path="/eats/orders/:id" element={<OrderDetails />} />
-              {/* <Route path="*" element={<PageNotFound />} exact /> */}
+              <Route path="*" element={<PageNotFound />} exact />
           </Routes>
   
   )

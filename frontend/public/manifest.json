@@ -8,7 +8,7 @@
       "type": "image/x-icon"
     },
     {
-      "src": "brand-logo.png",
+      "src": "/brand-logo.png",
       "type": "image/png",
       "sizes": "192x192"
     },

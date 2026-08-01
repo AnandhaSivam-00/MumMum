@@ -24,11 +24,7 @@ const ForgotPassword = () => {
 
     const sumbitHandler = (e) => {
         e.preventDefault();
-
-        const formData = new FormData();
-        formData.set("email", email);
-
-        dispatch(forgotPassword(formData));
+        dispatch(forgotPassword({ email }));
     };
 
   return (

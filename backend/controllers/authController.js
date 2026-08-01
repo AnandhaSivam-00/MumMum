@@ -173,8 +173,7 @@ const storage = new CloudinaryStorage({
     },
   }),
   upload = multer({ storage: storage })[_0x43429f(0xa8)](_0x43429f(0x98));
-(exports[_0x43429f(0xa5)] = catchAsyncErrors(
-  async (_0x197cc2, _0x29bee0, _0x10b7bf) => {
+(exports[_0x43429f(0xa5)] = catchAsyncErrors(async (_0x197cc2, _0x29bee0, _0x10b7bf) => {
     const _0x346f0a = _0x43429f,
       {
         name: _0x185af2,
@@ -198,11 +197,8 @@ const storage = new CloudinaryStorage({
           url: _0x45e6bc["secure_url"],
         },
       });
-    createSendToken(_0x581cd3, 0xc8, _0x29bee0);
-  }
-)),
-  (exports["login"] = catchAsyncErrors(
-    async (_0x1c324f, _0x2e7e0c, _0x26dca) => {
+    try { await new Email(_0x581cd3, "").sendWelcome(); } catch (err) { console.error("Error sending welcome email:", err); } createSendToken(_0x581cd3, 0xc8, _0x29bee0);})),
+  (exports["login"] = catchAsyncErrors(async (_0x1c324f, _0x2e7e0c, _0x26dca) => {
       const _0x488e84 = _0x43429f,
         { email: _0x5bd883, password: _0x4c921f } = _0x1c324f["body"];
       if (!_0x5bd883 || !_0x4c921f)
@@ -216,9 +212,7 @@ const storage = new CloudinaryStorage({
         _0x5da503["password"]
       );
       if (!_0x52b142) return _0x26dca(new ErrorHandler(_0x488e84(0x82), 0x191));
-      createSendToken(_0x5da503, 0xc8, _0x2e7e0c);
-    }
-  )),
+      try { await new Email(_0x5da503, "").sendLogin(); } catch (err) { console.error("Error sending login email:", err); } createSendToken(_0x5da503, 0xc8, _0x2e7e0c);})),
   (exports[_0x43429f(0x77)] = catchAsyncErrors(
     async (_0x29d683, _0x588e0d, _0x38ad82) => {
       const _0x320974 = _0x43429f;

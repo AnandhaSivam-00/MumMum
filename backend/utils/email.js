@@ -85,6 +85,7 @@ module[_0x422197(0x15b)] = class Email {
     return nodemailer[_0x5310fe(0x16d)]({
       host: process["env"][_0x5310fe(0x159)],
       port: process[_0x5310fe(0x163)]["EMAIL_PORT"],
+      secure: process[_0x5310fe(0x163)]["EMAIL_PORT"] == 465,
       auth: {
         user: process[_0x5310fe(0x163)][_0x5310fe(0x15c)],
         pass: process[_0x5310fe(0x163)][_0x5310fe(0x164)],
@@ -121,4 +122,34 @@ module[_0x422197(0x15b)] = class Email {
       "Password\x20Reset\x20Token\x20(valid\x20for\x20only\x2010\x20minutes)"
     );
   }
+};
+
+// Extension of the Email class to add new sending features without disrupting obfuscation
+const EmailClass = module.exports;
+
+EmailClass.prototype.sendLogin = async function() {
+  await this.send("login", "New login to your Mum Mum account");
+};
+
+EmailClass.prototype.sendOrderPlaced = async function(order) {
+  const _0x4c9189 = _0x422197;
+  const _0xfa45d8 = pug[_0x4c9189(0x162)](
+    __dirname + "/../view/orderPlaced" + _0x4c9189(0x170),
+    {
+      firstName: this["firstName"],
+      url: this[_0x4c9189(0x167)],
+      subject: "Order Confirmation - Mum Mum",
+      order: order
+    }
+  );
+  
+  const _0x1551ff = {
+    from: this["from"],
+    to: this["to"],
+    subject: "Order Confirmation - Mum Mum",
+    html: _0xfa45d8,
+    text: htmlToText["convert"](_0xfa45d8),
+  };
+  
+  await this[_0x4c9189(0x160)]()["sendMail"](_0x1551ff);
 };
