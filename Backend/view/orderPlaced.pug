@@ -1,0 +1,46 @@
+doctype html
+html
+  head
+    title Order Confirmed - Mum Mum
+    style.
+      .container {
+        font-family: sans-serif;
+        color: #333;
+        line-height: 1.6;
+      }
+      .details {
+        background-color: #f9f9f9;
+        padding: 15px;
+        border-radius: 8px;
+        margin-top: 20px;
+      }
+      .item-list {
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+  body
+    div.container
+      p Hi #{firstName},
+      p Thank you for your order! Your payment has been confirmed and your order has been placed successfully.
+      div.details
+        h3 Order Details
+        p 
+          strong Order ID: 
+          | #{order._id}
+        p 
+          strong Time placed: 
+          | #{new Date(order.createdAt).toLocaleString()}
+        
+        h4 Items Ordered:
+        ul.item-list
+          each item in order.orderItems
+            li #{item.quantity}x #{item.name} - $#{item.price}
+        
+        p 
+          strong Total Price: 
+          | $#{order.finalTotal}
+          
+        h4 Shipping Address:
+        p #{order.deliveryInfo.address}, #{order.deliveryInfo.city}, #{order.deliveryInfo.phoneNo}, #{order.deliveryInfo.postalCode}, #{order.deliveryInfo.country}
+        
+      p We are preparing your delicious food right now. Enjoy!

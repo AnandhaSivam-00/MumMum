@@ -1,0 +1,29 @@
+doctype html
+html
+  head
+    title Welcome to Mum Mum!
+    style.
+      a { text-decoration: none; }
+      button {
+        color: white;
+        width: 15rem;
+        height: 3rem;
+        background-color: RGB(106, 44, 199);
+        border-radius: 1em;
+        border: none;
+        cursor: pointer;
+      }
+      .container {
+        font-family: sans-serif;
+        color: #333;
+        line-height: 1.6;
+      }
+  body
+    div.container
+      p Hi #{firstName},
+      p Welcome to Mum Mum! We're so glad you joined us.
+      p Get started by exploring our delicious menu and placing your first order.
+      a(href=`${url}`, target='_blank') 
+        button EXPLORE MENU
+      p If you need any help, don't hesitate to contact our support team.
+      p Enjoy!
