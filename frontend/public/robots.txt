@@ -1,3 +1,31 @@
+# robots.txt for MumMum - https://mum-mum.pages.dev
 # https://www.robotstxt.org/robotstxt.html
+
+# General crawlers 
 User-agent: *
-Disallow:
+
+# Allow public-facing pages
+Allow: /$
+Allow: /eats/stores/
+Allow: /eats/stores/search/
+
+# Block user account & auth routes (private, no SEO value)
+Disallow: /users/login
+Disallow: /users/signup
+Disallow: /users/me
+Disallow: /users/me/update
+Disallow: /users/forgetPassword
+Disallow: /users/resetPassword/
+
+# Block checkout & transactional routes
+Disallow: /cart
+Disallow: /delivery
+Disallow: /confirm
+Disallow: /payment
+Disallow: /success
+
+# Block user-specific order routes
+Disallow: /eats/orders/
+
+# Sitemap
+Sitemap: https://mum-mum.pages.dev/sitemap.xml
