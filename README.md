@@ -74,9 +74,9 @@ cd anand-app
 
 You need to configure environment variables for both the Backend and Frontend before running the project.
 
-### Backend — `Backend/config/config.env`
+### Backend — `backend/config/config.env`
 
-Create a file named `config.env` inside the `Backend/config/` directory and add the following variables:
+Create a file named `config.env` inside the `backend/config/` directory and add the following variables:
 
 ```env
 # Server
@@ -114,9 +114,9 @@ STRIPE_SECRET_KEY=<your-stripe-secret-key>
 STRIPE_API_KEY=<your-stripe-publishable-key>
 ```
 
-### Frontend — `Frontend/.env`
+### Frontend — `frontend/.env`
 
-Create a file named `.env` inside the `Frontend/` directory and add the following:
+Create a file named `.env` inside the `frontend/` directory and add the following:
 
 ```env
 VITE_BACKEND_URL=http://localhost:4000
