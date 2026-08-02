@@ -24,7 +24,8 @@ import {
     NEW_PASSWORD_FAIL,
     USER_LOGOUT_SUCCESS,
     USER_LOGOUT_FAIL,
-    CLEAR_ERROR_MESSAGES
+    CLEAR_ERROR_MESSAGES,
+    CLEAR_MESSAGE
 } from "../constants/userConstant";
 
 
@@ -166,6 +167,12 @@ export const forgotPasswordReducer = (state = {}, action) => {
             return {
                 ...state,
                 error: null
+            };
+        case CLEAR_MESSAGE:
+            return {
+                ...state,
+                message: null,
+                success: null
             };
         default:
             return state;

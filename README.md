@@ -74,9 +74,9 @@ cd anand-app
 
 You need to configure environment variables for both the Backend and Frontend before running the project.
 
-### Backend — `Backend/config/config.env`
+### Backend — `backend/config/config.env`
 
-Create a file named `config.env` inside the `Backend/config/` directory and add the following variables:
+Create a file named `config.env` inside the `backend/config/` directory and add the following variables:
 
 ```env
 # Server
@@ -114,9 +114,9 @@ STRIPE_SECRET_KEY=<your-stripe-secret-key>
 STRIPE_API_KEY=<your-stripe-publishable-key>
 ```
 
-### Frontend — `Frontend/.env`
+### Frontend — `frontend/.env`
 
-Create a file named `.env` inside the `Frontend/` directory and add the following:
+Create a file named `.env` inside the `frontend/` directory and add the following:
 
 ```env
 VITE_BACKEND_URL=http://localhost:4000
@@ -132,7 +132,7 @@ VITE_BACKEND_URL=http://localhost:4000
 Open a terminal and run:
 
 ```bash
-cd Backend
+cd backend
 npm install
 ```
 
@@ -141,7 +141,7 @@ npm install
 Open a second terminal and run:
 
 ```bash
-cd Frontend
+cd frontend
 npm install
 ```
 
@@ -188,7 +188,7 @@ Other frontend scripts:
 To populate the database with sample data (restaurants, menus, food items), run:
 
 ```bash
-cd Backend
+cd backend
 npm run seeder
 ```
 
@@ -200,20 +200,20 @@ npm run seeder
 To create a production build of the frontend:
 
 ```bash
-cd Frontend
+cd frontend
 npm run build
 ```
 
-The optimized production files will be generated in the `Frontend/dist/` directory. Deploy this folder to any static hosting service (e.g., Vercel, Netlify, or your own server).
+The optimized production files will be generated in the `frontend/dist/` directory. Deploy this folder to any static hosting service (e.g., Vercel, Netlify, or your own server).
 
-For the backend, deploy the `Backend/` folder to a Node.js hosting service (e.g., Render, Railway, or Heroku) and set the environment variables in the hosting provider's dashboard.
+For the backend, deploy the `backend/` folder to a Node.js hosting service (e.g., Render, Railway, or Heroku) and set the environment variables in the hosting provider's dashboard.
 
 
 ## Project Structure
 
 ```
 mum-mum-webapp/
-├── Backend/
+├── backend/
 │   ├── config/          # Environment config & database connection
 │   ├── controllers/     # Route controllers (auth, orders, payments, etc.)
 │   ├── middlewares/     # Error handling & async error wrappers
@@ -222,7 +222,7 @@ mum-mum-webapp/
 │   ├── utils/           # Utilities (seeder, email, API features)
 │   ├── app.js           # Express app setup
 │   └── server.js        # Server entry point
-├── Frontend/
+├── frontend/
 │   ├── public/          # Static assets
 │   ├── src/
 │   │   ├── actions/     # Redux actions

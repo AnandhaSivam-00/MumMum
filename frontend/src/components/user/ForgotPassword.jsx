@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import { toast } from "sonner";
 import {useDispatch, useSelector} from "react-redux";
-import {forgotPassword, clearError} from "../../actions/userActions";
+import {forgotPassword, clearError, clearMessage} from "../../actions/userActions";
 
 const ForgotPassword = () => {
 
@@ -18,6 +18,7 @@ const ForgotPassword = () => {
         }
         if(message) {
             toast.success(message);
+            dispatch(clearMessage());
         }
 
     }, [dispatch, error, message]);

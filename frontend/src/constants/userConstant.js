@@ -41,3 +41,4 @@ export const USER_LOGOUT_FAIL = "USER_LOGOUT_FAIL";
 
 //Clearing error messages
 export const CLEAR_ERROR_MESSAGES = "CLEAR_ERROR_MESSAGES";
+export const CLEAR_MESSAGE = "CLEAR_MESSAGE";
