@@ -25,7 +25,8 @@ import {
     NEW_PASSWORD_FAIL,
     USER_LOGOUT_SUCCESS,
     USER_LOGOUT_FAIL,
-    CLEAR_ERROR_MESSAGES
+    CLEAR_ERROR_MESSAGES,
+    CLEAR_MESSAGE
 } from "../constants/userConstant";
 
 //Login Action
@@ -159,7 +160,7 @@ export const forgotPassword = (email) => async (dispatch) => {
     catch(error) {
         dispatch({
             type: FORGOT_PASSWORD_FAIL,
-            payload: error.response.data.message
+            payload: error.response ? error.response.data.message : error.message
         });
     }
 };
@@ -204,4 +205,8 @@ export const logout = () => async (dispatch) => {
 //Clear Error Action
 export const clearError = () => async (dispatch) => {
     dispatch({type: CLEAR_ERROR_MESSAGES});
+};
+//Clear Message Action
+export const clearMessage = () => async (dispatch) => {
+    dispatch({type: CLEAR_MESSAGE});
 };
