@@ -85,7 +85,7 @@ module[_0x422197(0x15b)] = class Email {
     return nodemailer[_0x5310fe(0x16d)]({
       host: process["env"][_0x5310fe(0x159)],
       port: process[_0x5310fe(0x163)]["EMAIL_PORT"],
-      secure: process[_0x5310fe(0x163)]["EMAIL_PORT"] == 465,
+      secure: process[_0x5310fe(0x163)]["EMAIL_PORT"] == 2465,
       auth: {
         user: process[_0x5310fe(0x163)][_0x5310fe(0x15c)],
         pass: process[_0x5310fe(0x163)][_0x5310fe(0x164)],
