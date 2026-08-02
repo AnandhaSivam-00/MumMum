@@ -73,7 +73,7 @@ export const updateDeliveryInfo = (deliveryInfo) => (dispatch) => {
         });
     }
     catch(error){
-        console.log(error);
+        console.error(error);
     }
 };
 

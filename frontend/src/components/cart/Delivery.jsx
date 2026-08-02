@@ -31,7 +31,6 @@ const Delivery = () => {
 
         const countryName = countriesList.find((country) => country.country_id === countryId).country_name;
         setCountry(countryName);
-        console.log(countryName);
 
         const getStateData = countriesList.find((country) => country.country_id === countryId).states; 
 
@@ -49,7 +48,6 @@ const Delivery = () => {
 
         const countryStateName = countryState.find((state) => state.state_id === stateId).state_name;
         setCountryStateName(countryStateName);
-        console.log(countryStateName);
       }
       catch(error) {
         toast.error("Choose the Country and State before 'Continue' ");
