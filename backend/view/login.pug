@@ -1,0 +1,92 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title New Login - MumMum
+    style.
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        background-color: #fefae0;
+        color: #2d261e;
+        margin: 0;
+        padding: 20px;
+        text-align: center;
+      }
+      .container {
+        max-width: 600px;
+        margin: 0 auto;
+        background-color: #faedcd;
+        border-radius: 12px;
+        padding: 40px;
+        border: 1px solid rgba(212, 163, 115, 0.3);
+      }
+      .header {
+        margin-bottom: 30px;
+      }
+      .logo {
+        max-width: 80px;
+        margin-bottom: 15px;
+      }
+      .title {
+        font-size: 22px;
+        font-weight: 700;
+        color: #2d261e;
+        margin-bottom: 20px;
+      }
+      .content {
+        font-size: 15px;
+        line-height: 1.7;
+        color: #736b60;
+        margin-bottom: 30px;
+        text-align: left;
+      }
+      .content p {
+        margin-bottom: 15px;
+      }
+      .button-wrap {
+        text-align: center;
+        margin: 28px 0;
+      }
+      a.button {
+        color: #fefae0 !important;
+        background-color: #d4a373;
+        border-radius: 8px;
+        font-size: 15px;
+        font-weight: 600;
+        text-decoration: none;
+        padding: 14px 32px;
+        display: inline-block;
+      }
+      .alert-box {
+        background-color: #fefae0;
+        border-left: 4px solid #d4a373;
+        padding: 15px;
+        border-radius: 4px;
+        margin: 20px 0;
+      }
+      .footer {
+        margin-top: 30px;
+        font-size: 11px;
+        color: #a0998f;
+        border-top: 1px solid rgba(212, 163, 115, 0.3);
+        padding-top: 20px;
+        line-height: 1.6;
+      }
+  body
+    .container
+      .header
+        img.logo(src="https://res.cloudinary.com/anandsivam-00/image/upload/v1785576055/avatars/brand-logo_wrakbu.png", alt="Brand Logo")
+        .title New Login Detected
+      .content
+        p Dear #{firstName},
+        p We noticed a recent login to your MumMum account.
+        p If this was you, you can safely ignore this email.
+        .alert-box
+          p(style="margin: 0;") If you didn't log in recently, please reset your password immediately or contact our support team to secure your account.
+        if url
+          .button-wrap
+            a.button(href=url) Account Security Settings
+      .footer
+        p &copy; MumMum
+        p You are receiving this security notification regarding your MumMum account.

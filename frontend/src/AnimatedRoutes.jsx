@@ -37,7 +37,7 @@ const AnimatedRoutes = () => {
     store.dispatch(loadUser());
 
     async function getStripeApiKey() {
-      const {data} = await axios.get("/api/v1/stripeapi").catch((error) => {console.log(error)});
+      const {data} = await axios.get("/api/v1/stripeapi").catch((error) => {console.log(error.message)});
       setStripeApiKey(data.stripeApiKey);
     }
 
